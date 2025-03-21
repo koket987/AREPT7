@@ -5,7 +5,7 @@ En este taller vamos a diseñar un API y crear un monolito Spring que permita a 
 
 ## 📌 Características
 
-ste proyecto experimental consiste en la implementación de una API y una aplicación web que permite a los usuarios realizar publicaciones de hasta 140 caracteres, similar a Twitter. Se parte de un monolito en Spring Boot y se evoluciona hacia una arquitectura basada en microservicios desplegados en AWS Lambda.
+Este proyecto experimental consiste en la implementación de una API y una aplicación web que permite a los usuarios realizar publicaciones de hasta 140 caracteres, similar a Twitter. Se parte de un monolito en Spring Boot y se evoluciona hacia una arquitectura basada en microservicios desplegados en AWS Lambda.
 
 # Funcionalidades Principales
 
