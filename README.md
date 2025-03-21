@@ -66,16 +66,16 @@ http://localhost:8080/index.html
 Clases Principales
 
 > [!IMPORTANT]
-### 🔹 Monolito Inicial
-- Una sola aplicación Spring Boot que gestiona usuarios, posts y el stream de publicaciones.
-- Autenticación con JWT.
-- Base de datos PostgreSQL o DynamoDB.
+> ### 🔹 Monolito Inicial
+> - Una sola aplicación Spring Boot que gestiona usuarios, posts y el stream de publicaciones.
+> - Autenticación con JWT.
+> - Base de datos PostgreSQL o DynamoDB.
 
 > [!IMPORTANT]
 ### 🔹 Separación en Microservicios
-- **Servicio de Usuarios**: Registro y autenticación de usuarios.
-- **Servicio de Posts**: Creación y consulta de publicaciones.
-- **Servicio de Hilos (Stream)**: Administración del flujo de publicaciones.
+> - **Servicio de Usuarios**: Registro y autenticación de usuarios.
+> - **Servicio de Posts**: Creación y consulta de publicaciones.
+> - **Servicio de Hilos (Stream)**: Administración del flujo de publicaciones.
 
 
 ![image](https://github.com/user-attachments/assets/66248244-b248-47c4-a528-030e2d68cf3c)
