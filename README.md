@@ -71,8 +71,9 @@ Clases Principales
 > - Autenticación con JWT.
 > - Base de datos PostgreSQL o DynamoDB.
 
+
 > [!IMPORTANT]
-### 🔹 Separación en Microservicios
+> ### 🔹 Separación en Microservicios
 > - **Servicio de Usuarios**: Registro y autenticación de usuarios.
 > - **Servicio de Posts**: Creación y consulta de publicaciones.
 > - **Servicio de Hilos (Stream)**: Administración del flujo de publicaciones.
