@@ -1,33 +1,20 @@
 # Micro Servicios
 
-In this workshop, we will design and deploy a secure, scalable application using AWS infrastructure with a focus on best practices for security. Our architecture will feature two primary components:
-
-- **Server 1**: Apache Server
-  The Apache server will be responsible for serving an asynchronous HTML+JavaScript client over a secure connection using TLS. Client-side code will be delivered through encrypted channels, ensuring data integrity and confidentiality during download.
-- **Server 2**: Spring Framework
-  The Spring server will handle backend services, offering RESTful API endpoints. These services will also be protected using TLS, ensuring secure communication between the client and the backend.
+En este taller vamos a diseñar un API y crear un monolito Spring que permita a los usuarios hacer posts de 140 caracteres e ir registrandolos en un stream único de posts (a la Twitter). Piense en tres entidades Usuario, hilo(stream), posts, ademas vamos a crear un aplicación JS para usar el servicio. Depliegue la aplicación en S3. Asegúrese que esté disponible sobre internet.
 
 
 ## 📌 Características
 
+ste proyecto experimental consiste en la implementación de una API y una aplicación web que permite a los usuarios realizar publicaciones de hasta 140 caracteres, similar a Twitter. Se parte de un monolito en Spring Boot y se evoluciona hacia una arquitectura basada en microservicios desplegados en AWS Lambda.
 
 # Funcionalidades Principales
 
 En este taller, diseñaremos y desplegaremos una aplicación segura y escalable utilizando infraestructura de AWS, con un enfoque en las mejores prácticas de seguridad. Las funcionalidades principales de la aplicación incluyen:
 
-
-- **TLS Encryption**: Secure transmission of data using TLS certificates generated through Let’s Encrypt, ensuring confidentiality and integrity.
-- **Asynchronous Client**: Our HTML+JavaScript client will leverage async techniques to optimize performance while maintaining secure communication.
-- **Login Security**: We will implement login authentication, with passwords securely stored as hashes.
-- **AWS Deployment**: All services will be deployed and managed on AWS, leveraging its secure, reliable infrastructure.
-
-Despliegue de los servicios de backend y base de datos en servidores separados dentro de de AWS
-  
-```bash
-Despliegue en AWS
-```
-
-Se ejecuta localmente en contenedores Docker y también puede ser desplegada en una máquina virtual en AWS.
+- Registro y autenticación de usuarios con JWT (Cognito u otra tecnología).
+- Creación y visualización de publicaciones en un stream único.
+- Interfaz web en JavaScript para interactuar con el servicio.
+- Despliegue en AWS con separación de microservicios.
 
 
 ## 🛠️ Requisitos
@@ -38,12 +25,11 @@ Se ejecuta localmente en contenedores Docker y también puede ser desplegada en 
 - Spring Framework
 
 
-
 ## 🚀 Instalación y Ejecución
 ### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/Juanse2347/AREP_T6
-cd AREP_T6
+git clone https://github.com/Koket987/AREP_T7
+cd AREP_T7
 ```
 
 ### 2️⃣ Compilar el proyecto con Maven
