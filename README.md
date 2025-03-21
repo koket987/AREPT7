@@ -61,7 +61,7 @@ http://localhost:8080/index.html
 ![image](https://github.com/user-attachments/assets/d92215ec-dbee-4b37-910a-f20f93d48deb)
 
 
-## 🔍 Diseño de Clases 
+## 🔍 Sistema Arquitectónico
 
 Clases Principales
 
@@ -79,46 +79,9 @@ Clases Principales
 > - **Servicio de Hilos (Stream)**: Administración del flujo de publicaciones.
 
 
+
+
 ![image](https://github.com/user-attachments/assets/66248244-b248-47c4-a528-030e2d68cf3c)
-
-
-
-# 🔍 Sistema Arquitectónico
-
-El sistema consta de tres componentes principales:
-
-
-### 1. **Servidor Apache**
-
-- **Rol:** Servir contenido estático (HTML+JavaScript) de manera segura.
-- **Tecnología:** Apache HTTP Server.
-- **Seguridad:** Implementación de TLS para asegurar la transmisión de contenido estático. El servidor es configurado para entregar contenido a través de conexiones cifradas (HTTPS).
-- **Certificados SSL:** Se utilizarán certificados generados por Let's Encrypt para asegurar las conexiones.
-  
-### 2. **Servidor Spring Framework**
-
-- **Rol:** Proveer los servicios backend mediante APIs RESTful.
-- **Tecnología:** Spring Framework.
-- **Seguridad:** Implementación de TLS para asegurar que las comunicaciones entre el cliente y la API estén cifradas.
-- **Certificados SSL:** Certificados generados por Let's Encrypt para asegurar las conexiones HTTPS.
-
-### 3. **Cliente HTML+JavaScript (Asíncrono)**
-
-- **Rol:** Interfaz de usuario que interactúa con el servidor backend utilizando AJAX y técnicas asincrónicas.
-- **Tecnología:** HTML, JavaScript, y AJAX.
-- **Seguridad:** Las solicitudes AJAX se realizan de manera segura a través de HTTPS, garantizando la protección de los datos en tránsito.
-
-### 4. **Seguridad del Login**
-
-- **Autenticación:** El sistema de login estará protegido con autenticación de usuario. Las contraseñas se almacenarán de forma segura utilizando hashing (por ejemplo, bcrypt) en lugar de almacenamiento en texto plano.
-  
-### 5. **Despliegue en AWS**
-
-El despliegue de la aplicación se gestionará usando AWS. Utilizaremos servicios como EC2 para alojar los servidores Apache y Spring, y S3 o RDS para almacenamiento adicional según sea necesario.
-
-- **AWS EC2:** Instancias que alojarán el servidor Apache y el servidor Spring.
-- **AWS ELB (Elastic Load Balancer):** Para distribuir el tráfico entre las instancias si se requiere escalabilidad.
-- **AWS S3/RDS:** Opcional, dependiendo de los requisitos de almacenamiento.
 
 
 ## 🚀 Despliegue AWS
@@ -132,8 +95,6 @@ Ahora configuramos el grupo de seguridad de la instancia EC2 para permitir el tr
 
 
 ![image](https://github.com/user-attachments/assets/520a5553-1dc2-4a30-9930-c02f078a3a10)
-
-
 
 
 Desplegamos nuestro codigo en AWS
