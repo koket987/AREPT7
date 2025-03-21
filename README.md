@@ -37,7 +37,7 @@ cd AREP_T7
 mvn clean install
 ```
 
-![image](https://github.com/user-attachments/assets/2755aea0-a8ef-488d-9d1a-54eb748878a1)
+![image](https://github.com/user-attachments/assets/97fbe2ec-8b49-41a1-8107-b421fde0c432)
 
 
 
@@ -47,17 +47,18 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-![image](https://github.com/user-attachments/assets/6c7fafa7-4cb3-4ff1-b947-8fc43a8faa7d)
+![image](https://github.com/user-attachments/assets/8793f127-5163-4014-a435-d9c0076cf549)
+
 
 
 Probamos en el navegador lo siguiente:
 
 ```bash
-https://localhost:5000
+http://localhost:8080/index.html
 ```
 
 
-![image](https://github.com/user-attachments/assets/d2d9c003-4126-4db8-987b-f9b9d96cb7ea)
+![image](https://github.com/user-attachments/assets/d92215ec-dbee-4b37-910a-f20f93d48deb)
 
 
 ## 🔍 Diseño de Clases 
@@ -65,12 +66,20 @@ https://localhost:5000
 Clases Principales
 
 > [!IMPORTANT]
->  - **HelloController**: Representa la entidad de propiedad con los atributos id, address, price, size, y description.
->  - **SecureURLReader**: Contiene la lógica del negocio para gestionar las operaciones CRUD de las propiedades.
->  - **Secureweb**: Proporciona los endpoints RESTful para interactuar con el frontend.
+### 🔹 Monolito Inicial
+- Una sola aplicación Spring Boot que gestiona usuarios, posts y el stream de publicaciones.
+- Autenticación con JWT.
+- Base de datos PostgreSQL o DynamoDB.
+
+> [!IMPORTANT]
+### 🔹 Separación en Microservicios
+- **Servicio de Usuarios**: Registro y autenticación de usuarios.
+- **Servicio de Posts**: Creación y consulta de publicaciones.
+- **Servicio de Hilos (Stream)**: Administración del flujo de publicaciones.
 
 
-![image](https://github.com/user-attachments/assets/17c1bbfb-18e4-4341-a457-6738dcf3472f)
+![image](https://github.com/user-attachments/assets/66248244-b248-47c4-a528-030e2d68cf3c)
+
 
 
 # 🔍 Sistema Arquitectónico
