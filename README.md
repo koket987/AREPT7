@@ -91,7 +91,7 @@ Creamos la instancia en AWS EC2.
 ![image](https://github.com/user-attachments/assets/235034e2-76fb-4234-aa50-fb34a714b1f4)
 
 
-Ahora configuramos el grupo de seguridad de la instancia EC2 para permitir el tráfico entrante en el puerto 50000 (o el puerto que hayas configurado en tu aplicación Spring Boot).
+Ahora configuramos el grupo de seguridad de la instancia EC2 para permitir el tráfico entrante en el puerto 8080 (o el puerto que hayas configurado en tu aplicación Spring Boot).
 
 
 ![image](https://github.com/user-attachments/assets/520a5553-1dc2-4a30-9930-c02f078a3a10)
@@ -128,7 +128,29 @@ http://EC2_PUBLIC_IP:5000/
 
 Que se veria de la siguiente manera
 
-![image](https://github.com/user-attachments/assets/a438e938-a59a-4055-9781-2b6102e5eeae)
+![image](https://github.com/user-attachments/assets/f10e80d6-4abf-4184-8ff8-23d0b0fde5de)
+
+
+
+## 🔍 Pruebas ##
+
+Realizamos el registro en nuestro twitter Clone
+
+![image](https://github.com/user-attachments/assets/bbdb8c90-fcbf-4cdb-8a96-46b79163845e)
+
+
+Iniciamos sesion
+
+![image](https://github.com/user-attachments/assets/c17b193b-0278-4e8e-9ebc-c91ffbf73f8b)
+
+Creamos y posteamos
+
+![image](https://github.com/user-attachments/assets/3b96d399-35ce-45c5-a59a-b827df8a0bc0)
+
+
+Hilos dentro de las publicaciones
+
+![image](https://github.com/user-attachments/assets/1dc44921-8943-4273-a509-b1e5103592af)
 
 
 ## 🔍 Pruebas de Estilo de Codificacion ##
@@ -167,7 +189,7 @@ Usamos [SemVer](http://semver.org/) para controlar las versiones.
 
 ## :bust_in_silhouette: Autor ##
 
-* **Juan Sebastian Sanchez** - *Trabajo Inicial* - [Juanse2347](https://github.com/Juanse2347)
+* **Santiago Rodriguez & Juan Sebastian Sanchez** - *Trabajo Inicial* - [Juanse2347](https://github.com/Juanse2347) [koket987](https://github.com/koket987)
 
 
 ## 📄 Licencia
